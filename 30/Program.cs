@@ -1,7 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-//26.Найти сумму чисел от 1 до А
-
+// Console.WriteLine("Hello, World!");
 System.Console.Write("Введите число a: ");
 int a = Convert.ToInt32(Console.ReadLine());
 int[] mas = new int[a];
@@ -17,17 +15,16 @@ void FillArray(int[] collection)
 }
 int GetNumbersSum(int[] collection)
 {
-    int sum = 0;
+    int prod = 1;
     int count = 1;
     while(count <= a)
     {
-        int result = sum + count;
-        sum = result;
+        int result = prod * count;
+        prod = result;
         count++;
     }
-    return sum;
+    return prod;
 }
 int NumberSum = GetNumbersSum(mas);
-System.Console.WriteLine($"Сумма чисел от 1 до {a} = {NumberSum}");
+System.Console.WriteLine($"произведение чисел от 1 до {a} = {NumberSum}");
 FillArray(mas);
-

@@ -35,28 +35,30 @@ double N=Convert.ToDouble(Console.ReadLine());
 System.Console.Write($"{N}"," ");
 System.Console.WriteLine(tablesq);
 */
-static extern Fill.Array(int[] collection);
+int n = Convert.ToInt32(Console.ReadLine());
+int[] mas = new int[n];
+void FillArray(int[] collection)
 {
-     int[] array= new int[N];
-     int index = 1;
-     while (index > 0 && index < N+1)
-     {
-          Collection[index] = index;
-          index++;
-     }
+    int length = collection.Length;
+    int index = 1;
+    while (index < length)
+    {
+        collection[index] = index * index;
+        index++;
+    }
 }
 void PrintArray(int[] col)
 {
-     int count= N+1;
-     int position = 0;
-     while(position < count)
-     {
-          System.Console.WriteLine(col[position]);
-          position++;
-     }
+    int count = col.Length;
+    int pos = 1;
+    while(pos < count)
+    {
+        System.Console.WriteLine(col[pos]);
+        pos++;
+    }
 }
 
 
-int N=Convert.ToInt32(Console.ReadLine());
-FillArray(array);
-PrintArray(array);
+
+FillArray(mas);
+PrintArray(mas);

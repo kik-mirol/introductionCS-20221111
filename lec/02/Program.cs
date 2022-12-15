@@ -1,7 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-//25.Вывести на экран кубы чисел от 1 до N
-
+//.WriteLine("Hello, World!");
 int n = Convert.ToInt32(Console.ReadLine());
 int[] mas = new int[n];
 void FillArray(int[] collection)
@@ -10,7 +8,7 @@ void FillArray(int[] collection)
     int index = 1;
     while (index < length)
     {
-        collection[index] = index * index * index;
+        collection[index] = index * index;
         index++;
     }
 }
